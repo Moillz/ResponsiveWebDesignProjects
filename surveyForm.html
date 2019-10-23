@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SurveyForm</title>
+  <link rel="stylesheet" href="css/surveyForm.css">
+
+  <link href="https://fonts.font.im/css?family=Heebo:100|Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!-- 标题 -->
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <!-- 关于页面的描述 -->
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <!-- 收集信息的表单 -->
+    <form action="/submit.txt" id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" required placeholder="Enter your name" class="input-control">
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" required placeholder="Enter your email" class="input-control">
+
+
+      <label for="number" id="bumber-label">Age:(optional)</label>
+        <input type="number" name="age" id="number" min="10" max="150" required 
+        placeholder="Age"  class="input-control">
+
+      <label for="">Which option best describes your current role?</label>
+        <input list="dropdown" required placeholder="Select your current role" class="input-control">
+        <datalist id="dropdown">
+          <option value="Student"></option>
+          <option value="Full Time Job"></option>
+          <option value="Full Time Learner"></option>
+          <option value="Prefer not to say"></option>
+          <option value="Other"></option>
+        </datalist>
+      
+        <!-- 三个单选选项 -->
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label for="recommend-radio" class="radio-label">
+          <input type="radio" name="recommend" class="input-radio" >Definitely
+        </label>
+        <label for="recommend-radio" class="radio-label">
+          <input type="radio" name="recommend" class="input-radio">Maybe
+        </label>
+        <label for="recommend-radio" class="radio-label">
+          <input type="radio" name="recommend" class="input-radio">Not sure
+        </label>
+        
+      
+      <label for="feature" id="feature-label">What is your favorite feature
+        of freeCodeCamp?</label>
+        <input list="features" id="feature" placeholder="Select an feature" class="input-control">
+        <datalist id="features">
+          <option value="Challenges"></option>
+          <option value="Projects"></option>
+          <option value="Community"></option>
+          <option value="Open Source"></option>
+        </datalist>
+      
+        <!-- 十一个多选选项 -->
+      <label for="improved-item">What would you like to see improved?(Check all that apply)</label>
+       <label class="select-items">
+         <input type="checkbox" name="improved-item" value="Front-end Projects" class="checkboxes">
+         Front-end Projects
+      </label > 
+      <label class="select-items">
+         <input type="checkbox" name="improved-item" value="Back-end Projects" class="checkboxes">
+         Back-end Projects
+      </label> 
+      <label class="select-items">
+         <input type="checkbox" name="improved-item" value="Data Visualization" class="checkboxes">
+         Data Visualization
+      </label> 
+      <label class="select-items">
+         <input type="checkbox" name="improved-item" value="Challenges" class="checkboxes">
+         Challenges
+      </label> 
+      <label class="select-items" >
+         <input type="checkbox" name="improved-item" value="Open Source Community" class="checkboxes">
+         Open Source Community
+      </label> 
+      <label class="select-items" >
+         <input type="checkbox" name="improved-item" value="Gitter help rooms" class="checkboxes">
+         Gitter help rooms
+      </label> 
+      <label class="select-items">
+         <input type="checkbox" name="improved-item" value="Videos" class="checkboxes">
+         Videos
+      </label> 
+      <label class="select-items">
+         <input type="checkbox" name="improved-item" value="City Meetups" class="checkboxes">
+         City Meetups
+      </label> 
+       <label class="select-items">
+         <input type="checkbox" name="improved-item" value="Wiki" class="checkboxes">
+         Wiki 
+      </label> 
+      <label class="select-items">
+         <input type="checkbox" name="improved-item" value="Forum" class="checkboxes" >
+         Forum 
+      </label> 
+      <label class="select-items">
+         <input type="checkbox" name="improved-item" value="Additional Courses" class="checkboxes">
+         Additional Courses 
+      </label> 
+         
+      <label for="massage">Any comments or suggestions?</label>
+      <textarea name="msg" id="massage" rows="7" placeholder="Enter your comment here..."></textarea>
+
+      <!-- 提交按钮 -->
+      <button type="submit" id="submit" class="submit-bottom">
+        Submit
+      </button>
+    </form>
+  </main>
+</body>
+
+</html>
