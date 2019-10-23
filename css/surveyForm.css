@@ -1,0 +1,110 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color:#1ABC9C ;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 70px 300px 0px 300px;
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 70px, 10px 0px 10px;
+  }
+}
+
+p {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
+form {
+  @media (max-width: 700px) {
+    width: 560px;
+  }
+  display: block;
+  width: 800px;
+  margin: 30px auto;
+  padding: 40px 30px;
+  background: rgba(22, 160, 133, 0.7);
+  border-radius: 0.25rem;
+}
+
+label {
+  display: flex;
+  margin: auto auto 10px auto;
+  align-items: center;
+  color: #34495e;
+  font-size: 1.5rem;
+}
+input {
+    line-height: inherit;
+}
+.input-control {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.375rem;
+    margin: auto auto 20px auto;
+    padding: 0.375rem 0.75rem;
+    color: #34495e;
+    font-size: 1rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.radio-label {
+  font-size: 1.25rem;
+}
+
+
+.select-items {
+  font-size: 1.25rem;
+}
+
+/* 控制多选框样式 */
+.checkboxes ,.input-radio{
+  display: inline-block;
+  width: 30px;
+  min-height: 1.25rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+bottom {
+  margin: auto;
+  border: 0;
+  line-height: inherit;
+}
+.submit-bottom {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0.65rem;
+  color: floralwhite;
+  background: #085c4b;
+  border: #085c4b;
+  font-family: inherit;
+  font-size: 1.45rem;
+}
